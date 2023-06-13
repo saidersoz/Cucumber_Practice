@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         },
 
         features = "src/test/resources/features",  //Testlerimizi aldığımız yer
-        glue = "src/test/java/stepDefinitions",    //Kodlarımızı aldığımız yer
-        tags = "",                                 //Testlere verdiğimiz isimi buraya yazıyoruz
+        glue = "stepDefinitions",                  //Kodlarımızı aldığımız yer
+        tags = "@US1001",                     //Testlere verdiğimiz isimi buraya yazıyoruz
         dryRun = false                             // true yazarsam ==> Eksik adımları veriyor
                                                    //false yazarsam ==> Test eder(default değer ==> False)
 )

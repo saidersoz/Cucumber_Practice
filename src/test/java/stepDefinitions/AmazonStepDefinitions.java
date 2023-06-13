@@ -37,6 +37,18 @@ public class AmazonStepDefinitions {
         Assert.assertTrue(amazonPages.resultText.getText().contains("Java"));
     }
 
+
+    @Then("kullanici {string} icin arama yapar")
+    public void kullanici_icin_arama_yapar(String aranacak) {
+        amazonPages.searchBox.sendKeys(aranacak + Keys.ENTER);
+    }
+
+    @Then("sonuclarin {string} icerdigini test eder")
+    public void sonuclarin_icerdigini_test_eder(String sonuc) {
+        Assert.assertTrue(amazonPages.resultText.getText().contains(sonuc));
+    }
+
+
     @Then("sayfayi kapatir")
     public void sayfayi_kapatir() {
         Driver.closeDriver();
