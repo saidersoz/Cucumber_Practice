@@ -8,6 +8,8 @@ import pages.AmazonPages;
 import utilities.ConfigReader;
 import utilities.Driver;
 
+import java.io.DataInput;
+
 
 public class AmazonStepDefinitions {
     AmazonPages amazonPages = new AmazonPages();
@@ -46,6 +48,26 @@ public class AmazonStepDefinitions {
     @Then("sonuclarin {string} icerdigini test eder")
     public void sonuclarin_icerdigini_test_eder(String sonuc) {
         Assert.assertTrue(amazonPages.resultText.getText().contains(sonuc));
+    }
+
+
+    @Given("kullanici {string} sayfasinda")
+    public void kullanici_sayfasinda(String url) {
+        Driver.getDriver().get(ConfigReader.getProperty(url));
+    }
+
+    @Then("kullanıcı {int} saniye bekler")
+    public void kullanıcı_saniye_bekler(Integer saniye) {
+        try {
+            Thread.sleep(saniye * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Then("url'in {string} icerdigini test eder")
+    public void url_in_icerdigini_test_eder(String url) {
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(url));
     }
 
 
