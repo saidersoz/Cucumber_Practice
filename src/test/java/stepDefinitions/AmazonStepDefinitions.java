@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -39,7 +40,6 @@ public class AmazonStepDefinitions {
         Assert.assertTrue(amazonPages.resultText.getText().contains("Java"));
     }
 
-
     @Then("kullanici {string} icin arama yapar")
     public void kullanici_icin_arama_yapar(String aranacak) {
         amazonPages.searchBox.sendKeys(aranacak + Keys.ENTER);
@@ -49,7 +49,6 @@ public class AmazonStepDefinitions {
     public void sonuclarin_icerdigini_test_eder(String sonuc) {
         Assert.assertTrue(amazonPages.resultText.getText().contains(sonuc));
     }
-
 
     @Given("kullanici {string} sayfasinda")
     public void kullanici_sayfasinda(String url) {
@@ -70,10 +69,13 @@ public class AmazonStepDefinitions {
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(url));
     }
 
-
     @Then("sayfayi kapatir")
     public void sayfayi_kapatir() {
         Driver.closeDriver();
     }
 
+    @And("sayfanın baslıgını yazdır")
+    public void sayfanınBaslıgınıYazdır() {
+        System.out.println(Driver.getDriver().getTitle());
+    }
 }

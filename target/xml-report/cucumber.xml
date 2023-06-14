@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="8.508" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="US1004 Kullanıcı parametre ile configrations file'i kullanabilmeli" name="TC01 Configrations Properties dosyasından parametre kullanımı" time="8.325">
+<testsuite name="Cucumber" time="15.979" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US01_DENEME" name="amozanda telefon arasın" time="15.794">
 <system-out><![CDATA[
-Given kullanici "amazon_Url" sayfasinda.....................................passed
-Then kullanıcı 3 saniye bekler..............................................passed
-And url'in "amazon" icerdigini test eder....................................passed
+Given kullanici amazon sayfasinda...........................................passed
+Then kullanici "iphone14" icin arama yapar..................................passed
+And kullanıcı 6 saniye bekler...............................................passed
+And sayfanın baslıgını yazdır...............................................passed
 And sayfayi kapatir.........................................................passed
 ]]></system-out>
 </testcase>
