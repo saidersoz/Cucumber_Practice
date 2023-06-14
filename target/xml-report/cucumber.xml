@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="28.082" tests="3" skipped="0" failures="0" errors="0">
-<testcase classname="US1001_Kullanıcı Amazon Sayfasında Arama Yapar" name="TC01_Kullanıcı_Amazon_Nutella_Aratır" time="10.446">
+<testsuite name="Cucumber" time="23.225" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="US1002_Kullanıcı Amazon Sayfasında Arama Yapar" name="TC01_Kullanıcı Amazon sayfasında Nutella araması yapar" time="13.353">
 <system-out><![CDATA[
 Given kullanici amazon sayfasinda...........................................passed
-Then kullanici Nutella icin arama yapar.....................................passed
-And sonuclarin Nutella icerdigini test eder.................................passed
+Given kullanici "Nutella" icin arama yapar..................................passed
+Then sonuclarin "Nutella" icerdigini test eder..............................passed
 And sayfayi kapatir.........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US1001_Kullanıcı Amazon Sayfasında Arama Yapar" name="TC02_Kullanıcı Amazon Safyasında Java Aratır" time="8.778">
+<testcase classname="US1002_Kullanıcı Amazon Sayfasında Arama Yapar" name="TC02_Kullanıcı Amazon sayfasında Java araması yapar" time="9.598">
 <system-out><![CDATA[
 Given kullanici amazon sayfasinda...........................................passed
-Then kullanici Java icin arama yapar........................................passed
-And sonuclarin Java icerdigini test eder....................................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1001_Kullanıcı Amazon Sayfasında Arama Yapar" name="TC03_Kullanıcı Amazonda Sayfasında Iphone Aratır" time="8.644">
-<system-out><![CDATA[
-Given kullanici amazon sayfasinda...........................................passed
-Then kullanici "Iphone" icin arama yapar....................................passed
-And sonuclarin "Iphone" icerdigini test eder................................passed
+Given kullanici "Java" icin arama yapar.....................................passed
+Then sonuclarin "Java" icerdigini test eder.................................passed
 And sayfayi kapatir.........................................................passed
 ]]></system-out>
 </testcase>
