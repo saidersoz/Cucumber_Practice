@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="23.225" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="US1002_Kullanıcı Amazon Sayfasında Arama Yapar" name="TC01_Kullanıcı Amazon sayfasında Nutella araması yapar" time="13.353">
+<testsuite name="Cucumber" time="11.43" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1003 Amazon sayfasında arama yapma" name="TC01_Kullanıcı Amazon Sayfasında Nutella Araması Yapar" time="11.203">
 <system-out><![CDATA[
 Given kullanici amazon sayfasinda...........................................passed
-Given kullanici "Nutella" icin arama yapar..................................passed
-Then sonuclarin "Nutella" icerdigini test eder..............................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1002_Kullanıcı Amazon Sayfasında Arama Yapar" name="TC02_Kullanıcı Amazon sayfasında Java araması yapar" time="9.598">
-<system-out><![CDATA[
-Given kullanici amazon sayfasinda...........................................passed
-Given kullanici "Java" icin arama yapar.....................................passed
-Then sonuclarin "Java" icerdigini test eder.................................passed
+Then kullanici "Nutella" icin arama yapar...................................passed
+And sonuclarin "Nutella" icerdigini test eder...............................passed
 And sayfayi kapatir.........................................................passed
 ]]></system-out>
 </testcase>
