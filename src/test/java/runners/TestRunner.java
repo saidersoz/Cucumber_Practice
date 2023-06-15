@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources/features",  //Testlerimizi aldığımız yer
         glue = "stepDefinitions",                  //Kodlarımızı aldığımız yer
-        tags = "@sabri",                     //Testlere verdiğimiz isimi buraya yazıyoruz
+        tags = "@Automation_TC18",                     //Testlere verdiğimiz isimi buraya yazıyoruz
         dryRun = false                             // true yazarsam ==> Eksik adımları veriyor
                                                    //false yazarsam ==> Test eder(default değer ==> False)
 )
